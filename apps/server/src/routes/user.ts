@@ -1,13 +1,9 @@
-//tasks
-//authentication signup login
-//products buy get
-//profile edit delete
 
-import express, { Request, Response, Router } from "express";
+import { Request, Response, Router } from "express";
 import jwt from "jsonwebtoken";
 import { Product, User } from "../db";
 import { authenticateJWT, SECRET_KEY } from "../middleware";
-import { userSchema } from "../types/types";
+import { userSchema } from "@repo/common";
 
 const router: Router = Router();
 
